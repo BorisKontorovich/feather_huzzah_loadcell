@@ -1,0 +1,5 @@
+**/.vscode/
+**/.travis.yml
+**/.pioenvs/
+**/.piolibdeps/
+.DS_Store
