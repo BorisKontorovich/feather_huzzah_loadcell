@@ -3,7 +3,7 @@
 * THIS BOARD IS NOT 5V SAFE!
 
 * In order to connect to Feather Hazzah using a USB cable, you need to download a driver CP210x: <br>
-https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers<br>
+https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers <br>
 For more detail, take a look at Adafruit page: <br>
 https://learn.adafruit.com/adafruit-feather-huzzah-esp8266/using-nodemcu-lua
 
