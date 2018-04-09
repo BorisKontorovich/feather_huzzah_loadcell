@@ -35,10 +35,11 @@
     // a/z or +/- keys
     ///////////////////////////////////////////////////////////////////////////////////
     float calibration_factor = -21050;
+    float reading = 0;
      
 
     const char* ssid     = "Aspen 2.4";
-    const char* password = "1029384756";
+    const char* password = "1029384756/de";
      
     const char* host = "wifitest.adafruit.com";
      
@@ -64,6 +65,8 @@
       Serial.println("WiFi connected");  
       Serial.println("IP address: ");
       Serial.println(WiFi.localIP());
+
+      scale.set_scale(calibration_factor);
     }
      
     int value = 0;
@@ -102,4 +105,7 @@
       
       Serial.println();
       Serial.println("closing connection");
+
+      reading = scale.get_units();
+      Serial.print(reading, 1);
     }
